@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     color: #F9FAF8;
 }
+/*NOTE TO SELF: Alignment issues are almost always solved by shared containers, not flex tricks.*/
 .top-container{
     display:flex;
     flex-direction:column;
@@ -9,10 +10,9 @@
 }
 .header-container{
     display:flex;
-    
-    
     justify-content: space-between;
     flex-direction: row;    
+    align-items: center;
 }
 .links{
     display:flex;
@@ -28,19 +28,32 @@
 
 .main-container{
     display:flex;
-    width:auto;
+    width:60%;
     border: solid 10px #111827;
     flex-direction: column;
    
    
 }
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 0;
+}
+
 .main-text{
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    
     border: solid 10px #111827;
    
 }
+.content {
+  max-width: 1100px;  /* SAME width for header & main */
+  margin: 0 auto;     /* centers both */
+  padding: 0 20px;    /* edge breathing room */
+}
+
 .main-text h1,
 .main-text p {
   margin: 5px;
@@ -51,9 +64,14 @@
 
 
 .image-container{
-    width:400px;
-    height:300px;
+  width: 1550px;
+  height:200px;
     border: solid 10px #111827;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    
 }
 
 
@@ -81,6 +99,6 @@ button{
     background-color:#3882F6;
     border-radius: 999px;
     cursor: pointer;
-    padding: 5px;
+    padding: auto 20px 20px;
     width: 70px;;
 }
