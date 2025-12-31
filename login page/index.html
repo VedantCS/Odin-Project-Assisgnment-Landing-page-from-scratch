@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Odin Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+
+    <div class="left-panel">
+      <div class="logo-strip">
+       
+        <div class="logo-icon"></div>
+        <span class="logo-text">ODIN</span>
+      </div>
+      <p class="photo-credit">
+        Photo by Halie West on Unsplash
+      </p>
+    </div>
+
+    <div class="right-panel">
+      <div class="intro-text">
+        <p>
+          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+          Sign up now to get started.
+        </p>
+        <p>
+          You <span class="italic">know</span> you want to.
+        </p>
+      </div>
+
+      <form class="signup-form" novalidate>
+        <h2>Let’s do this!</h2>
+
+        <div class="form-row">
+          <label for="first-name">FIRST NAME
+            <input id="first-name" type="text" name="first-name" required>
+          </label>
+          <label for="last-name">LAST NAME
+            <input id="last-name" type="text" name="last-name" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label for="email">EMAIL
+            <input id="email" type="email" name="email" required>
+          </label>
+          <label for="phone">PHONE NUMBER
+            <input id="phone" type="tel" name="phone">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label for="password">PASSWORD
+            <input id="password" class="password" type="password" name="password" required minlength="6">
+          </label>
+          <label for="confirm-password">CONFIRM PASSWORD
+            <input id="confirm-password" class="password" type="password" name="confirm-password" required minlength="6">
+          </label>
+        </div>
+
+        <button type="submit" class="primary-btn">Create Account</button>
+
+        <p class="login-text">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
